@@ -1,8 +1,7 @@
 Initial Scenario Evaluation Document for web assignment
 
 CarZone Ltd specializes in the maintenance of cars ranging from conventional models to fairly recent introductions to the
-market including hybrid and electric. The company currently has no online presence however, we have been informed that they
-have recently implemented a database to keep track of their clients, suppliers and inventory. With a growing demand for their
-services, the owner of the company, Mr S. Dwarka aims to expand his business and wishes for us to develop a company website
-including a web app to kickstart his e-marketing campaign as well as improving the relationship CarZone Ltd holds with its
-clients. 
+market including hybrid and electric. The company currently has no online presence, however, we have been informed that they
+have recently implemented a computerized database to better keep track of their clients, suppliers and inventory. With a growing demand for their
+services, the owner of the company aims to expand his business and  wishes for us to develop a company website to kickstart 
+his e-marketing campaign as well as improving the relationship CarZone Ltd holds with its clients. 
