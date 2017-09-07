@@ -1,0 +1,16 @@
+Introduction
+
+Carzone, a car maintenance company, has now been open for the last decade. They have built up their reputation and a stable customer base over the years. The company owner wishes to expand his business to appeal to a wider range of people; he hopes that the development of a website will help him. 
+
+
+Brief description of the website:
+ 
+Conventionally, clients book for their car servicing appointments via telephone. The secratary records the time and date of the appointment in a report book. Once the client reports at the garage for their servicing appointment, the mechanic assesses the car and updates the report book with a list of all the jobs to be performed on the car and the spare parts required for those. Once the servicing is complete and the fee paid by the customer, the secratary fills in the database entry for the computer system.
+
+//Besides giving CarZoneltd online presence, the owner hopes for the online system to enable clients to book their appointments electronically. The app also returns an error message should the appointment time being set by the client be unsuitable for the mechanic assigned to the job.
+
+The app allows the client to sign up for an account, add details about themselves and their car(s), it then generates a database entry and automatically synchronises the latter with the system. 
+The client can then view a summary of his profile and his pending appointment(s). 
+
+
+
