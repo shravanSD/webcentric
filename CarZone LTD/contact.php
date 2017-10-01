@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-UK">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style/style.css">
-        <script src="js/myjs.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="shortcut icon" href="images/logo-favicon.png">
-        <title>Contact us | CarZone</title>
+        <?php include 'head.html'; ?>
+        <title>Contact | CarZone</title>
     </head>
 
     <body>

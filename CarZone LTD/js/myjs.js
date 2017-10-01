@@ -6,7 +6,7 @@ $(document).ready(function()
 {
     var nav = $('.navbar');
     var sp = $('.spacer');
-    var banner = $('.header .image');
+    var banner = $('header .image');
     var pos = nav.position();
 
     $(window).scroll(function()
@@ -25,8 +25,9 @@ $(document).ready(function()
 }
 );
 
-window.onscroll = function() {scrollFunction()};
 
+
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.documentElement.scrollTop > 350) {
         document.getElementById("myBtn").style.display = "block";
@@ -40,3 +41,20 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
+
+$( document ).ready(function() {
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000);    
+    }
+});
