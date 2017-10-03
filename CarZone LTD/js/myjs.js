@@ -6,7 +6,7 @@ $(document).ready(function()
 {
     var nav = $('.navbar');
     var sp = $('.spacer');
-    var banner = $('header .image');
+    var banner = $('.header .image');
     var pos = nav.position();
 
     $(window).scroll(function()
@@ -15,7 +15,6 @@ $(document).ready(function()
             if (windowpos >= banner.outerHeight())
             {
                 nav.addClass("fixedTop");
-                // sp.css('margin-top', '50px;');
             }
             else
             {

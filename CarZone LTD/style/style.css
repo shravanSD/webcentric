@@ -18,6 +18,10 @@
     font-family: 'Raleway-Thin';
     src: url('fonts/Raleway-Thin.ttf');
 }
+@font-face{
+    font-family: 'Abel-Regular';
+    src: url('fonts/Abel-Regular.ttf');
+}
 
 body {
     /* background-color: paleturquoise; */
@@ -28,10 +32,6 @@ body {
     margin-bottom: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-.belowheader {
-    height: 60px;
 }
 
 header {
@@ -46,6 +46,8 @@ header {
     width: 100%;
     height: 50px;
     background-color: darkcyan;
+    box-shadow: 0px 8px 16px 0px rgba(0, 162, 255, 0.25);
+    z-index: 99;
 }
 
 .navbar a:link {
@@ -67,11 +69,11 @@ header {
 }
 
 .fixedTop a:link {
-    color: red;;
+    color: #eee;
 }
 
 .fixedTop a:visited {
-    color: red;
+    color: #eee;
 }
 
 ul {
@@ -90,16 +92,48 @@ li a {
     text-decoration: none;
     padding: 15px 14px;
     text-align: center;
-    /* font-family: 'phitradesign Handwritten Thin'; */
+    font-family: 'Abel-Regular';
     font-size: 15px;
-    color: #666;
     transition: background-color 0.5s;
     transition-timing-function: ease-out;
 }
 
 li a:hover{
     background-color: rgba(194, 194, 194, 0.39);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: #777;
+    z-index: 99;
+    min-width: 175px;
+    cursor: pointer;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content li a {
+    text-align: left;
+}
+
+.dropdown-content li a:link {
     color: black;
+}
+
+.dropdown-content li a:visited {
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .active {
@@ -119,7 +153,7 @@ a {
 .sliderwrap {
     top: 0;
     height: 700px;
-    background-color: rgb(66, 121, 113);
+    background-color: #eee;
 }
 
 .slider {
@@ -138,12 +172,9 @@ a {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    /* table-layout: fixed; */
 }
 
-.indexintro td {
+#cont td {
     vertical-align: top;
     text-align: left;
 }
@@ -154,36 +185,60 @@ a {
     padding: 0;
 }
 
-.footer_table {
-    color: #fff;
-    height: 200px;
-    background-color: darkslategrey;
+.footer_info {
+    height: 450px;
+    background-color: darkblue;
     font-family: 'Raleway-Regular';
+    top: 50px;
 }
 
-.footer_info {
-    height: 400px;
-    background-color: darkblue;
+.keep_space {
+    height: 100px;
+    background-color: inherit;
+}
+
+.footer_info .maintable  {
+    margin-left: auto;
+    margin-right: auto;
+    /* table-layout: fixed; */
+}
+
+.footer_info table .time td {
+    font-size: 19px;
+}
+
+.footer_info table td {
+    width: 250px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+    color: white;
+}
+
+.footer_info table th {
+    height: 50px;
+}
+
+/* footer table made with starts here */
+
+.footer_table {
+    color: #fff;
+    height: 150px;
+    background-color: darkslategrey;
+    font-family: 'Raleway-Regular';
+    top: 0;
 }
 
 .footer_table table {
-    
-    width: 80%;
+    width: 600px;
     height: 100%;
-    /* position: relative; */
     margin-left: auto;
     margin-right: auto;
     table-layout: fixed;
 }
 
-.fadeinout {
-    transition: "opacity: 50%", 3s;
-}
-
-td {
-    /* background-color: palegoldenrod; */
+.footer_table table td {
     text-align: center;
-    /*  */
 }
 
 td a {
@@ -211,7 +266,7 @@ td a {
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    transition: 0.5s;
+    
 }
 
 #myBtn:hover {

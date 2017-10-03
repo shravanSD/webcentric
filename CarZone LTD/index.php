@@ -8,43 +8,70 @@
     </head>
 
     <body>
-        <!-- <div class="header"> -->
-        <header>
+        <div class="header">
             <div class="image">
                 <img src="http://via.placeholder.com/1920x350/" style="width:100%; height: 350px;">
             </div>
 
-            <div class="belowheader">
-                <div class="navbar">
-                    <ul>
-                        <li style="width:70px; margin-left: 40px;"><a class="active" href="index.php"><img src="images/logo-favicon.png" width="16px" height="16px" ></a></li>
-                        <li><a href="about.php">About us</a></li>
-                        <li><a href="booking.php">Booking</a></li>
-                        <li><a href="rating.php">Rating</a></li>
-                        <li><a href="contact.php">Contact us</a></li>
-                        <li style="float: right; margin-right: 40px;"><a href="login.php">Login</a></li>
-                        <li style="float: right;"><a href="signup.php">Sign up</a></li>
-                    </ul>
-                </div>
+            <div class="navbar">
+                <ul>
+                    <li style="width:70px; margin-left: 40px;"><a class="active" href="index.php"><img src="images/logo-favicon.png" width="16px" height="16px" ></a></li>
+
+                    <li class="dropdown"><a href="#">About</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="about.php">About Shop</a>
+                                <a href="#mechanics">About Employees</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#">Booking</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="#servicing">Book a servicing date</a>
+                                <a href="#checkup">Book a check-up date</a>
+                            </li>
+                        </ul>            
+                    </li>
+                    <li class="dropdown"><a href="#">Feedback</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="feedback.php">Leave Feedback</a>
+                                <a href="review.php">View Review</a>
+                            </li>
+                        </ul>            
+                    </li>
+                    <li class="dropdown"><a href="#">Contact us</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="https://www.facebook.com/CarZoneLtd">Facebook</a>
+                                <a href="mailto:shravan_dwarka@live.com">Mail</a>
+                                <a href="#form">Form</a>
+                            </li>
+                        </ul>            
+                    </li>
+                    <li style="float: right; margin-right: 40px;"><a href="login.php">Login</a></li>
+                    <li style="float: right;"><a href="signup.php">Sign up</a></li>
+                </ul>
             </div>
-        </header>
-        <!-- </div> -->
+        </div>
 
         <div class="mainCon">
             <div class="sliderwrap">
                 <div class="slider" style="max-width: 1000px;">
-                    <img class="mySlides fadeinout" src="images/1.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides fadeinout" src="images/2.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides fadeinout" src="images/3.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides fadeinout" src="images/4.jpeg" style="width:100%; height: 700px;">
-                    <img class="mySlides fadeinout" src="images/5.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides fadeinout" src="images/6.jpg" style="width:100%; height: 700px;">
+                    <img class="mySlides" src="images/1.jpg" style="width:100%; height: 700px;">
+                    <img class="mySlides" src="images/2.jpg" style="width:100%; height: 700px;">
+                    <img class="mySlides" src="images/3.jpg" style="width:100%; height: 700px;">
+                    <img class="mySlides" src="images/4.jpeg" style="width:100%; height: 700px;">
+                    <img class="mySlides" src="images/5.jpg" style="width:100%; height: 700px;">
+                    <img class="mySlides" src="images/6.jpg" style="width:100%; height: 700px;">
                 </div>
             </div>
 
             <div class="indexintro">
                 <section>
-                    <table>
+                    <table id="cont" cellspacing="100px">
                         <tr>
                             <td>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis elit eu eros vehicula, ut imperdiet nunc convallis. 
@@ -111,21 +138,13 @@
                                 eu ullamcorper massa laoreet ac. Integer eu lacinia eros.
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                Etiam pretium maximus lorem, et ullamcorper massa pulvinar vitae. Quisque tempus, sem a sodales vulputate, tellus risus vehicula ipsum, id pharetra ipsum metus 
-                                at nulla. Integer quis gravida purus. Vestibulum accumsan consequat laoreet. Etiam placerat, dolor eleifend commodo rhoncus, tortor turpis viverra metus, 
-                                a lacinia mi urna blandit urna. Integer tincidunt, magna sit amet posuere mollis, magna enim rhoncus mauris, eget scelerisque diam magna sit amet velit. Aenean 
-                                leo est, gravida id elementum quis, blandit nec metus. Ut nec massa tellus. Etiam rutrum arcu dolor, ac posuere ipsum placerat sit amet.
-                            </td>
-                            <td>
-                                Nullam pretium ante eget tortor sagittis vehicula. Mauris scelerisque sodales dui sed porttitor. Pellentesque pretium laoreet neque vitae venenatis. Morbi 
-                                hendrerit, mi a laoreet elementum, lacus felis sodales ex, quis venenatis sem justo non sem. Aenean sed eros metus. Etiam in lectus eget mi consequat pretium 
-                                eu sit amet turpis. Cras pharetra accumsan varius. Mauris tempor tortor volutpat nisi lacinia, id aliquet felis vestibulum.
-                            </td>
-                        </tr>
+                       
                     </table>
                 </section>
+            </div>
+
+            <div class="review">
+            
             </div>
         </div>
 
@@ -133,22 +152,111 @@
 
         <div class="footer">
             <div class="footer_info">
-                    <table>
-                        
-                    </table>
+                <div class="keep_space">
+                </div>
+                <table class="maintable">
+                    <tr>
+                        <td>
+                            <table class="details">
+                                <th>
+                                    <a href="index.php">Home</a>
+                                </th>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="details">
+                                <th>
+                                    <a href="#">About</a>
+                                </th>
+                                <tr>
+                                    <td><a href="about.php">About Shop</a></td>
+                                </tr>
+                                    <td><a href="#mechanics">About Employees</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="details">
+                                <th>
+                                    <a href="#">Booking</a>
+                                </th>
+                                <tr>
+                                    <td><a href="#servicing">Book a servicing date</a></td>
+                                </tr>
+                                    <td><a href="#checkup">Book a check-up date</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="details">
+                                <th>
+                                    <a href="#">Feedback</a>
+                                </th>
+                                <tr>
+                                    <td><a href="about.php">About Shop</a></td>
+                                </tr>
+                                    <td><a href="#mechanics">About Employees</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="details">
+                                <th>
+                                    <a href="#">Contact us</a>
+                                </th>
+                                <tr>
+                                    <td><a href="https://www.facebook.com/CarZoneLtd">Facebook</a></td>
+                                </tr>
+                                    <td><a href="mailto:shravan_dwarka@live.com">Mail</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#form">Form</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="time">
+                                <th>Opening days : hours</th>
+                                <tr>
+                                    <td>Monday : 08 30 - 16 30</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday : 08 30 - 16 30</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday : 08 30 - 16 30</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday : 08 30 - 16 30</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday : 08 30 - 16 30</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday : 08 30 - 12 30</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
             </div>
+
             <div class = "footer_table">
                 <table>
                     <tr>
-                        <td colspan="3">Made with ♥ in Mauritius</td>
+                        <td colspan="4">Made with ♥ in Mauritius</td>
                     </tr>
                     <tr>
-                        <td class=""><a href="https://www.facebook.com/CarZoneLtd/">Facebook</a></td>
-                        <td><a href="mailto:shravan_dwarka@live.com">Mail</a></td>
-                        <td><a href="contact.php">Online</a></td>
+                        <td colspan="4">Designed by</td>
                     </tr>
                     <tr>
-                        <td colspan="3"><p>We know your car, better than you do - CarZone Ltd</p></td>
+                        <td>Shravan DWARKA |</td>
+                        <td>Pranav DHONDEA |</td>
+                        <td>Vyas JALLIM |</td>
+                        <td>Shakill HINGAH</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><p>We know your car, better than you do - CarZone Ltd</p></td>
                     </tr>
                 </table>
             </div>
