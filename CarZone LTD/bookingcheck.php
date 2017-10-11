@@ -2,7 +2,7 @@
 <html lang="en-UK">
     <head>
         <?php include 'head.html'; ?>
-        <title>About | CarZone</title>
+        <title>Booking Check-up | CarZone</title>
     </head>
 
     <body>
@@ -16,7 +16,7 @@
                     <ul>
                         <li style="width:70px; margin-left: 40px;"><a href="index.php"><img src="images/logo-favicon.png" width="16px" height="16px" ></a></li>
 
-                        <li class="dropdown"><a class="active" href="#">About</a>
+                        <li class="dropdown"><a href="#">About</a>
                             <ul class="dropdown-content">
                                 <li>
                                     <a href="about.php">About Us</a>
@@ -25,7 +25,7 @@
                             </ul>
                         </li>
 
-                        <li class="dropdown"><a href="#">Booking</a>
+                        <li class="dropdown"><a class="active" href="#">Booking</a>
                             <ul class="dropdown-content">
                                 <li>
                                     <a href="bookingserv.php">Book a servicing date</a>
@@ -56,10 +56,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="indexintro">
-
         </div>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
