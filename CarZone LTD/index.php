@@ -8,13 +8,13 @@
     </head>
 
     <body>
-        <div class="header">
+        <header>
             <div class="image">
                 <img src="images/banner.png" style="width:100%; height: 200px;">
             </div>
             
             <div class="below_header">
-                <div class="navbar">
+                <nav>
                     <ul>
                         <li style="width:70px; margin-left: 40px;"><a class="active" href="index.php"><img src="images/logo-favicon.png" width="16px" height="16px" ></a></li>
 
@@ -56,9 +56,9 @@
                         <li style="float: right; margin-right: 40px;"><a href="login.php">Login</a></li>
                         <li style="float: right;"><a href="signup.php">Sign up</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </div>
+        </header>
 
         <div class="mainCon">
             <div class="sliderwrap">
