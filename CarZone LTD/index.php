@@ -4,13 +4,17 @@
         <?php
             include 'head.html';
         ?>
+
+
+        <link rel="stylesheet" href="style/indexstyles.css">
+        <script src="js/slide.js"></script>
         <title>Home | CarZone</title>
     </head>
 
     <body>
         <header>
             <div class="image">
-                <img src="images/banner.png" style="width:100%; height: 200px;">
+                <img src="images/banner.png" style="width:100%; height: 190px;">
             </div>
             
             <div class="below_header">

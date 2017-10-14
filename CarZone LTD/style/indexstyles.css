@@ -1,0 +1,34 @@
+.sliderwrap {
+    top: 0;
+    height: 700px;
+    background-color: #eee;
+}
+
+.slider {
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;   
+}
+
+.indexintro {
+    
+    font-family: 'Raleway-Light';
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cont td {
+    vertical-align: top;
+    text-align: justify;
+}
+
+
+
+
+
+
