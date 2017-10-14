@@ -14,7 +14,7 @@
     <body>
         <header>
             <div class="image">
-                <img src="images/banner.png" style="width:100%; height: 190px;">
+                <img src="images/banner.png" style="width:100%; height: 200px;">
             </div>
             
             <div class="below_header">
@@ -47,15 +47,7 @@
                                 </li>
                             </ul>            
                         </li>
-                        <li class="dropdown"><a href="#">Contact us</a>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a href="#location">Find us</a>
-                                    <a href="https://www.facebook.com/CarZoneLtd">Facebook</a>
-                                    <a href="mailto:shravan_dwarka@live.com">Mail</a>
-                                    <a href="#form">Form</a>
-                                </li>
-                            </ul>            
+                        <li class="dropdown"><a href="contact.php">Contact us</a>         
                         </li>
                         <li style="float: right; margin-right: 40px;"><a href="login.php">Login</a></li>
                         <li style="float: right;"><a href="signup.php">Sign up</a></li>

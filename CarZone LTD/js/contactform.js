@@ -1,3 +1,8 @@
+var head = document.getElementsByTagName['head'];
+var script = document.createElement('script');
+script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
+
+
 function validateAll(){
 
 	resetErrMessage();
@@ -103,10 +108,20 @@ function validatephonenum(num){
 
 //overlay
 
-function overlayOn(){
-	document.getElementById('overlay').style.display="block";
-}
+// function overlayOn(){
+// 	document.getElementById('overlay').style.display="block";
+// }
 
-function overlayOff(){
-	document.getElementById('overlay').style.display="none";
-}
+// function overlayOff(){
+// 	document.getElementById('overlay').style.display="none";
+// }
+
+$(document).ready(function(){
+	$('#locatebutton').click(function(){
+		$("#overlay").fadeIn(1500);
+	});
+
+	$("#overlay").click(function(){
+		$(this).fadeOut(1500);
+	});
+});

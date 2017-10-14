@@ -17,7 +17,7 @@
         
 
         <!--overlay-->
-        <div id="overlay" onclick="overlayOff()">
+        <div id="overlay" >
             <img src="images/locationmap.png" alt="img">
         </div>
 
@@ -26,7 +26,7 @@
 
         <div class="header">
             <div class="image">
-                <img src="images/banner.png" style="width:100%; height:190px;">
+                <img src="images/banner.png" style="width:100%; height:200px;">
             </div>
             
             <div class="below_header">
@@ -59,15 +59,8 @@
                                 </li>
                             </ul>            
                         </li>
-                        <li class="dropdown"><a class="active" href="#">Contact us</a>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a href="#location">Find us</a>
-                                    <a href="https://www.facebook.com/CarZoneLtd">Facebook</a>
-                                    <a href="mailto:shravan_dwarka@live.com">Mail</a>
-                                    <a href="#form">Form</a>
-                                </li>
-                            </ul>            
+                        <li class="dropdown"><a class="active" href="contact.php">Contact us</a>
+                                   
                         </li>
                         <li style="float: right; margin-right: 40px;"><a href="login.php">Login</a></li>
                         <li style="float: right;"><a href="signup.php">Sign up</a></li>
@@ -168,7 +161,7 @@
 
                     <tr>
                         <td colspan="2">
-                            <input type="button" value="Locate us on Map" id="locatebutton" onclick="overlayOn()">
+                            <input type="button" value="Locate us on Map" id="locatebutton" >
                         </td>
                     </tr>
                     
