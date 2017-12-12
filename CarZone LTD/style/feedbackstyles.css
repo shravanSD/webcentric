@@ -1,0 +1,114 @@
+.mainCon{
+	
+	padding:25px 0;
+}
+
+
+#feedbacktable label img{
+	width: 46px;	
+}
+#feedbacktable label > input[type="radio"]{
+  display:none;
+}
+ #feedbacktable input[type="radio"] + img{
+ padding: 1px;
+  cursor:pointer;
+  border:3px solid transparent;
+}
+#feedbacktable input[type="radio"]:checked + img{
+  border:3px solid black;
+  border-radius: 26px;
+  background-color: #6600ff; 
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+#feedbacktable {
+	background-color: #ccccff;
+	margin: 20px 0 20px 0;
+	margin-left: 25%;
+	width: 50%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+#feedbacktable td{	
+	padding: 8px 15px 8px 15px;
+	text-align:left;
+}
+#feedbacktable  td:first-child{
+	text-align: right;
+	width: 50%;
+}
+
+#feedbacktable tr:nth-child(even){
+	background-color:#f2f2f2; 
+}
+
+#feedbacktable textarea{
+	padding: 5px;
+	margin: 10px 0;
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+}
+
+#feedbacktable caption{
+	padding: 10px;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+
+#feedbackresult{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.9);
+    z-index: 7;
+	display: none;
+}
+
+#feedbackresult p{	
+	color: white;
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	font-size: 4vw;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+#feedbackresult p{
+	margin-top:20%;
+}
+
+#feedbackrating{
+	text-shadow: 2px 2px 1px black;
+	padding: 0 7px 0 7px;
+	border-radius: 15%;
+
+}
+
+input[id="btnSubmit"],input[id="btnReset"]{
+	font-family: 'Raleway-Regular';
+	font-size: 1.1em;
+
+	padding: 5px 12px;
+	background-color: #8080ff;
+	color: white;
+	border: 1px solid black;
+	margin:7px 0;
+}
+
+input[id="btnSubmit"]:hover,input[id="btnReset"]:hover{
+	background-color: white;
+	color: black;
+}

@@ -156,36 +156,28 @@ a {
 */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    height: 600px;
-    margin: 0;
-    padding: 0;
+.footer_info{
+    background-color: darkblue;
 }
 
-.footer_info {
-    height: 450px;
+.maintable {
+    padding:  0 0 15px 0;
+    margin-left: 10%;
+    width: 80%;
     background-color: darkblue;
     font-family: 'Raleway-Regular';
-    top: 50px;
+    
+
 }
 
-footer .footer_info h1 {
-    padding-top: 60px;
-    color: white;
+#maintablecaption{
+    color: #fff;
+    font-family: 'Raleway-Regular';
+    padding-top: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
 }
-
 .keep_space {
     height: 25px;
     background-color: inherit;
@@ -197,9 +189,6 @@ footer .footer_info h1 {
     /* table-layout: fixed; */
 }
 
-.footer_info table .time td {
-    font-size: 19px;
-}
 
 .footer_info table td {
     width: 250px;
@@ -222,7 +211,7 @@ footer .footer_info h1 {
 .footer_table {
     color: #fff;
     height: 150px;
-    background-color: darkslategrey;
+    background-color: #000033;
     font-family: 'Raleway-Regular';
     top: 0;
 }

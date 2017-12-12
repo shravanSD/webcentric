@@ -119,9 +119,21 @@ function validatephonenum(num){
 $(document).ready(function(){
 	$('#locatebutton').click(function(){
 		$("#overlay").fadeIn(1500);
+		$("#garageLocation").css({"display":"block"});
+		mapInit();
 	});
 
-	$("#overlay").click(function(){
-		$(this).fadeOut(1500);
+	$("#btnClose").click(function(){
+		$("#overlay").fadeOut(1500);
 	});
 });
+
+// $(document).ready(function(){
+// 	$('#locatebutton').click(function(){
+// 		$("#garageLocation").show();
+// 	});
+
+// 	// $("#overlay").click(function(){
+// 	// 	$(this).fadeOut(1500);
+// 	// });
+// });

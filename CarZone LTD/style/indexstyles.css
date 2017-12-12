@@ -1,11 +1,16 @@
 .sliderwrap {
-    top: 0;
-    height: 700px;
-    background-color: #eee;
+    /*top: 0;*/
+    height: 600px;
+    /*background-color: #eee;*/
+    background-image: url("../images/showcase.jpg");
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slider {
-    height: 700px;
+    height: 600px;
     width: 1000px;
     margin: auto;
 }

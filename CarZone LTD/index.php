@@ -12,59 +12,22 @@
     </head>
 
     <body>
-        <header>
-            <div class="image">
-                <img src="images/banner.png" style="width:100%; height: 200px;">
-            </div>
-            
-            <div class="below_header">
-                <nav>
-                    <ul>
-                        <li style="width:70px; margin-left: 40px;"><a class="active" href="index.php"><img src="images/logo-favicon.png" width="16px" height="16px" ></a></li>
+        
+        <?php
+            include 'header.html';
+        ?>
 
-                        <li class="dropdown"><a href="#">About</a>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a href="about.php">About Us</a>
-                                    <a href="#mechanics">About Employees</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown"><a href="#">Booking</a>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a href="bookingserv.php">Book a servicing date</a>
-                                    <a href="bookingcheck.php">Book a check-up date</a>
-                                </li>
-                            </ul>            
-                        </li>
-                        <li class="dropdown"><a href="#">Feedback</a>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a href="feedback.php">Leave Feedback</a>
-                                    <a href="review.php">View Review</a>
-                                </li>
-                            </ul>            
-                        </li>
-                        <li class="dropdown"><a href="contact.php">Contact us</a>         
-                        </li>
-                        <li style="float: right; margin-right: 40px;"><a href="login.php">Login</a></li>
-                        <li style="float: right;"><a href="signup.php">Sign up</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 
         <div class="mainCon">
+            <div class="showcaseImage"></div>
             <div class="sliderwrap">
-                <div class="slider" style="max-width: 1000px;">
-                    <img class="mySlides" src="images/1.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides" src="images/2.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides" src="images/3.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides" src="images/4.jpeg" style="width:100%; height: 700px;">
-                    <img class="mySlides" src="images/5.jpg" style="width:100%; height: 700px;">
-                    <img class="mySlides" src="images/6.jpg" style="width:100%; height: 700px;">
+                <div class="slider" style="max-width: 900px;">
+                    <img class="mySlides" src="images/1.jpg" style="width:100%; height: 600px;">
+                    <img class="mySlides" src="images/2.jpg" style="width:100%; height: 600px;">
+                    <img class="mySlides" src="images/3.jpg" style="width:100%; height: 600px;">
+                    <img class="mySlides" src="images/4.jpeg" style="width:100%; height: 600px;">
+                    <img class="mySlides" src="images/5.jpg" style="width:100%; height: 600px;">
+                    <img class="mySlides" src="images/6.jpg" style="width:100%; height: 600px;">
                 </div>
             </div>
 
@@ -152,5 +115,6 @@
         <?php
             include 'footer.html';
         ?>
+
     </body>
 </html>
