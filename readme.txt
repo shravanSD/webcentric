@@ -15,3 +15,9 @@ Changes:
 	-footer fix
 	-Use of google map api to locate us ( activated when "Locate us on map" button is pressed in contact page)
 	-slider background added
+
+Changes:
+20/12/17
+	-Home page updated with some relevant contents... future updates will address the customer reviews to be left on homepage as evidence of our services
+	-Sign up/ login interface implemented. JS validation still has bugs.
+	
