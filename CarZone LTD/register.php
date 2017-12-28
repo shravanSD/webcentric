@@ -4,7 +4,7 @@
         <?php include 'head.html'; ?>
 
         <!--add your individual style/js here-->
-        <link rel="stylesheet" type="text/css" href="style/register.css">
+        <link rel="stylesheet" type="text/css" href="style/registerstyles.css">
         <script type="text/javascript" src="register.js"></script>
         <!--addtitle-->
         <title></title>
