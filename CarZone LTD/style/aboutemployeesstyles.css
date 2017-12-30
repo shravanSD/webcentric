@@ -1,0 +1,78 @@
+
+#abtbox1,#abtbox2{
+	z-index: 1;
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	background-color: rgba(242,242,242,0.8);
+	
+	/*border: 2px solid black;*/
+	/*box-sizing: border-box;*/
+	text-align: center;
+	margin: auto;
+    width: 60%;
+    padding-top: 15px;
+    
+ 
+
+}
+.mainCon{
+	padding-top: 15px;
+}
+#abtbox1{
+}
+#abtbox2{
+	padding-top: 0;
+	display: none;
+}
+
+#btn{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 15px;
+  padding: 5px;
+
+    font-family: 'Raleway-Light';
+	font-weight: bold;
+	background-color: #8080ff;
+	color: white;
+	border: 1px solid black;
+	letter-spacing: 1px;
+}
+
+#btn:hover{
+	background-color: white;
+	color: black;
+}
+.abttable {
+	background-color: rgb(242,242,242);
+	text-align: left;
+	border: 1px solid black;
+	width: 450px;
+	margin:auto;
+	padding: 0;
+	border-collapse: collapse;
+}
+.abttable tr td { 	
+	/*height: 30px;*/
+
+	width: 250px;
+	margin: 0; 
+	padding: 0;
+	padding: 4px;
+}
+
+.mainCon{
+	/*min-height:420px;*/
+    /* The image used */
+    
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

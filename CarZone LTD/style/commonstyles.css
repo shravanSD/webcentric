@@ -45,6 +45,7 @@ header {
 .below_header {
     height: 50px;
     width: 100%;
+    z-index: 4;
 }
 
 nav {

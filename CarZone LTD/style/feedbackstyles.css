@@ -1,6 +1,21 @@
 .mainCon{
 	
-	padding:25px 0;
+	
+}
+
+.mainCon{
+	/*min-height:420px;*/
+    /* The image used */
+    padding:25px 0;
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -111,4 +126,8 @@ input[id="btnSubmit"],input[id="btnReset"]{
 input[id="btnSubmit"]:hover,input[id="btnReset"]:hover{
 	background-color: white;
 	color: black;
+}
+
+caption{
+	text-shadow: 0 0 4px white;
 }

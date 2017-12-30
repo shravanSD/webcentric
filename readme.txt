@@ -1,10 +1,10 @@
 -Code reuse-> copy the template i created in TEMPLATE.php to your file and then start development.
 	-> create your customized css,js,php file for each html/css file.
 
-.......Read index.php, contactform.php AND linked files to know how the modularization works.
+.......Read index.php, contactform.php AND linked files to understand how the modularization works.
 
 
-Changes:
+Changes:(Vyas)
 10/12/17-
 
 	-Customerfeedback implemented(Feedback->Leave review)
@@ -16,8 +16,17 @@ Changes:
 	-Use of google map api to locate us ( activated when "Locate us on map" button is pressed in contact page)
 	-slider background added
 
-Changes:
+Changes:(Pranav)
 20/12/17
 	-Home page updated with some relevant contents... future updates will address the customer reviews to be left on homepage as evidence of our services
-	-Sign up/ login interface implemented. JS validation still has bugs.
+	-Sign up/ login interface implemented. 
+	-!!!JS validation still has bugs.!!!
 	
+
+Changes:(Shakill & Vyas)
+30/12/17
+	-list of employees in aboutemployees.php added
+	-css modification
+	-js modification
+
+	note: insert data from .sql file to your mysql database for the employees

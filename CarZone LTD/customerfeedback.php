@@ -22,7 +22,7 @@
         <?php include 'header.html';?>
 
         <!--Add your content in this div-->
-        <div class="mainCon">
+        <div class="mainCon" style="background-image: url('images/showcase.jpg');">
             <form id="feedbackform" method="post">
                 <table id="feedbacktable">
                     <caption>Customer Feedback</caption>
@@ -238,7 +238,7 @@
         </div>
 
 
-        <br>
+        
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
 
         <?php include 'footer.html'; ?>
