@@ -2,8 +2,7 @@
 <html lang="en-UK">
     <head>
 
-        <?php include 'head.html';
-        ?>
+        <?php include 'head.html';?>
 
         <link rel="stylesheet" type="text/css" href="style/contactstyles.css">
 

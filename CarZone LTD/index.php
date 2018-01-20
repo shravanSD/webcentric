@@ -70,7 +70,7 @@
                         <tr>
                             <td id="help">
                                 <h3>Need any help?</h3>
-                                    <p>Hey there! Are you having any issues with your car lately? Don't know who to ask for help? No worries! We've got you covered. Contact our experts <span><a href="contact.php">here</a></span>and we'll be happy to answer your questions <strong>FREE</strong> of charge OR <span><a href="bookingserv.php"></span>book an appointment should you require any of the services we offer.</a> </p>
+                                    <p>Hey there! Are you having any issues with your car lately? Don't know who to ask for help? No worries! We've got you covered. Contact our experts <a href="contact.php">here</a> and we'll be happy to answer your questions <strong>FREE</strong> of charge OR <a href="bookingserv.php">book</a> an appointment should you require any of the services we offer.</p>
                                 </td>
                         </tr>   
 

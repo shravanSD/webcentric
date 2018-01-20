@@ -145,17 +145,10 @@ li a:hover{
     background-color: rgba(124, 164, 204, 0.39);
 }
 
-a {
+.below_header a {
     display: block;
     padding: 14px;
 }
-
-/*
-.mainCon {
-    top: 0;
-}
-*/
-
 
 .footer_info{
     background-color: darkblue;
