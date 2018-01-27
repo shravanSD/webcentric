@@ -3,6 +3,15 @@
 
 .......Read index.php, contactform.php AND linked files to understand how the modularization works.
 
+...........................................................................................................................................
+TO BE DONE & TO BE DISCUSSED
+	-session implementation
+	-feedback display implementation
+	-booking system
+	-my account system
+	-logout
+...........................................................................................................................................
+
 
 Changes:(Vyas)
 10/12/17-
@@ -30,3 +39,10 @@ Changes:(Shakill & Vyas)
 	-js modification
 
 	note: insert data from .sql file to your mysql database for the employees
+
+Changes:(Pranav & Vyas)
+22/12/17
+	-signup/login js validation fix
+	-signup/login php mysql implementation through ajax
+	-FULLY FUNCTIONAL EXCEPT SESSION IMPLEMENTATION
+

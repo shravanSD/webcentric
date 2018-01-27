@@ -1,113 +1,111 @@
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
-  
-  var $this = $(this),
-      label = $this.prev('label');
 
-	  if (e.type === 'keyup') {
-			if ($this.val() === '') {
-          label.removeClass('active highlight');
-        } else {
-          label.addClass('active highlight');
-        }
-    } else if (e.type === 'blur') {
-    	if( $this.val() === '' ) {
-    		label.removeClass('active highlight'); 
-			} else {
-		    label.removeClass('highlight');   
-			}   
-    } else if (e.type === 'focus') {
-      
-      if( $this.val() === '' ) {
-    		label.removeClass('highlight'); 
-			} 
-      else if( $this.val() !== '' ) {
-		    label.addClass('highlight');
+
+			function f1(){
+			fname = document.getElementById("fname").value;
+			lname = document.getElementById("lname").value;
+			emailadd = document.getElementById("email").value;
+			tel = document.getElementById("tel").value;
+			gender = document.getElementById("gender").value;
+			password = document.getElementById("password").value;
+			confpassword = document.getElementById("confpassword").value;
+
+			clearall();
+			//test regEx
+			// var regexp1=new RegExp("[^a-z|^A-Z]");
+			var telnoexp = /^([0-9]{8})$/;
+			var regexp1 = /^([a-zA-Z]+)$/;
+			var regExMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+			if (fname=="") {
+				fname_err.innerHTML = "*First name required!"
+				//return false;
 			}
-    }
+			else if (lname=="") {
+				lname_err.innerHTML = "*Last Name required!"
+				//return false;
+			}
 
-});
+			else if(!regexp1.test(fname))
+			{
+				fname_err.innerHTML = "*Invalid name!";
+				//return false;
+			}
 
-$('.tab a').on('click', function (e) {
-  
-  e.preventDefault();
-  
-  $(this).parent().addClass('active');
-  $(this).parent().siblings().removeClass('active');
-  
-  target = $(this).attr('href');
+			else if(!regexp1.test(lname))
+			{
+				lname_err.innerHTML = "*Invalid name!"
+				//return false;
+			}
 
-  $('.tab-content > div').not(target).hide();
-  
-  $(target).fadeIn(600);
-  
-});
+			else if (emailadd=="") {
+				email_err.innerHTML = "*Email address required!"
+				//return false;
+			}
+			else if (!regExMail.test(emailadd)) {
+				email_err.innerHTML = "*E-mail format not valid!";
+				//return false;
+			}
 
-//validation still has bugs
-
-// function f1(){
-// fname = document.getElementById("fname").value;
-// lname = document.getElementById("lname").value;
-// emailadd = document.getElementById("email").value;
-// password = document.getElementById("password").value;
-// confpassword = document.getElementById("confpassword").value;
-
-// //test regEx
-// // var regexp1=new RegExp("[^a-z|^A-Z]");
-// var regexp1 = /[a-zA-Z]{6,15}/;
-// if(!regexp1.test(document.getElementById("fname").value))
-// {
-//   alert("Only alphabets from a-z and A-Z are allowed for first name and should be between 6-15 characters");
-//   return false;
-// }
-
-// if(!regexp1.test(document.getElementById("lname").value))
-// {
-//   alert("Only alphabets from a-z and A-Z are allowed for first name and should be between 6-15 characters");
-//   return false;
-// }
-
-// if (fname=="") {
-//   alert("You have not entered a first name");
-//   return false;
-// }
-
-// if (fname.length<6 || lname.length<6) {
-//   alert("Name too short");
-//   return false;
-// }
-
-// if (fname.length>15 || lname.length>15) {
-//   alert("Name too long");
-//   return false;
-// }
-
-// if (lname=="") {
-//   alert("You have not entered a last name!");
-//   return false;
-// }
-
-// if (emailadd=="") {
-//   alert("You have not entered an email address!");
-//   return false;
-// }
+			else if(!telnoexp.test(tel))
+			{
+				tel_err.innerHTML =  "*Invalid Telephone no.!";
+				//return false;
+			}
 
 
-// if(password=="" || confpassword=="")
-// {
-//   alert("Both password fields are required!");
-//   return false;
-// }
+			else if(password=="")
+			{
+				pass_err.innerHTML = "*Password required!";
+				//return false;
+			}
 
-// //matching passwords?
-// if (password != confpassword) {
-//   alert("The passwords do not match!");
-//   return false;
-// }
+			else if (password.length<6) {
+				pass_err.innerHTML = "*Minimum characters is 6";
+				//return false;
+			}
 
-// //checkmail
-// var regExMail = /([a-zA-Z.-_]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-// if (!regExMail.test(document.getElementById("email").value)) {
-//   alert("E-mail format not valid");
-//   return false;
-// }
-// }
+			//matching passwords?
+			else if (password != confpassword) {
+				passmatch_err.innerHTML = "*Unmatched passwords!";
+				//return false;
+			}
+
+			///check terms and conditions --- error
+			else if(!document.getElementById("signupterms").checked) {
+				alert("Please Accept terms & Conditions");
+				//return false;
+			}
+
+
+			//ajax-php
+			else{
+				alert("a");
+				signupprocessing(fname,lname,emailadd,tel,gender,password);
+				alert("z");
+			}
+		}
+
+
+		function clearall(){
+
+			fname_err.innerHTML = "";
+			lname_err.innerHTML = "";
+			email_err.innerHTML = "";
+			tel_err.innerHTML = "";
+			pass_err.innerHTML = "";
+			passmatch_err.innerHTML = "";
+		}
+
+		function signupprocessing(fname,lname,emailadd,tel,gender,password){
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function(){
+				if(this.readyState ==4 && this.status==200){
+					document.getElementById("sign_message").innerHTML = this.response;
+				}
+			}
+
+			xhttp.open("POST","php/registerprocess.php",true);
+			xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhttp.send("fname="+fname+"&lname="+lname+"&email="+emailadd+"&tel="+tel+"&gender="+gender+"&password="+password);
+		}

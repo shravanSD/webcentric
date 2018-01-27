@@ -35,7 +35,7 @@ body {
 }
 
 header {
-    height: 250px;
+    height: 248px;
 }
 
 .image {
@@ -43,14 +43,14 @@ header {
 }
 
 .below_header {
-    height: 50px;
+    height: 48px;
     width: 100%;
-    z-index: 4;
+    z-index: 8;
 }
 
 nav {
     width: 100%;
-    height: 50px;
+    height: 48px;
     background-color: #000000; 
 }
 
@@ -67,9 +67,9 @@ nav a:visited {
     top: 0;
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 48px;
     box-shadow: 0px 0px 10px 0px #7676FF;
-    /* z-index: 1; */
+    z-index: 10;
 }
 
 .fixedTop a:link {
@@ -81,7 +81,7 @@ nav a:visited {
 }
 
 ul {
-    top: 200px;
+    top: 198px;
     left: 0;
     margin: 0;
     padding: 0;
@@ -102,8 +102,12 @@ li a {
     transition-timing-function: ease-out;
 }
 
-li a:hover{
+/*li a:hover{
     background-color: rgba(194, 194, 194, 0.39);
+}*/
+
+li a:hover{
+    background-color: #8080ff;
 }
 
 .dropdown {
@@ -111,13 +115,19 @@ li a:hover{
 }
 
 .dropdown-content {
-    display: none;
+    /*display: none;*/
+    opacity: 0; 
+    transition: opacity 0.5s;
     position: absolute;
-    top: 50px;
-    background-color: #777;
+    top: 48px;
+    /*background-color: #777;*/
+    background: rgba(0,0,0,0.6);
     z-index: 4;
     min-width: 175px;
     cursor: pointer;
+
+   
+
 }
 
 .dropdown-content li {
@@ -129,15 +139,18 @@ li a:hover{
 }
 
 .dropdown-content li a:link {
-    color: black;
+    color: white;
 }
 
 .dropdown-content li a:visited {
-    color: black;
+    color: white;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+
+    /*display: block;*/
+    opacity: 100;
+
 }
 
 .active {

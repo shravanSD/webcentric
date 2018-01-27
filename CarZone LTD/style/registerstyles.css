@@ -1,179 +1,182 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
+/*@font-face{
+    font-family: 'Aller-lt';
+    src: url('fonts/Aller_Lt.ttf');
+}*/
+.mainCon{
+	/*min-height:420px;*/
+    /* The image used */
+    
 
+    /* Full height */
+    height: 100%; 
 
-.form {
-  background: rgba(19, 35, 47, 0.5); 
-  padding: 0px;
-  max-width: 600px;
-  margin: 40px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.LoginBox,.LoginBox2
+{
+	
+	/*position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	width: 400px;*/
+	/*position: absolute;*/
+	margin-left: 35%;
+	width: 30%;
+	padding-bottom: 22px;
 
-
-li a {
-    text-decoration: none;
-    padding: 15px 14px;
-    text-align: center;
-    font-family: 'Abel-Regular';
-    font-size: 15px;
-    transition: background-color 0.5s;
-    transition-timing-function: ease-out;
-}
-
-.tab-group {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-.tab-group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.tab-group li a {
-  display: block;
-  text-decoration: none;
-  padding: 15px;
-  background: rgba(160, 179, 176, 0.25);
-  color: #a0b3b0;
-  font-size: 20px;
-  float: left;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px
-}
-.tab-group li a:hover {
-  background: #041935;
-  color: #ffffff;
-}
-.tab-group .active a {
-  background: navy;
-  color: #ffffff;
-}
-
-.tab-content > div:last-child {
-  display: none;
-}
-
-h1 {
-  text-align: center;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 0 40px;
-}
-
-/*inside text box*/
-span {
-    color: #1ab188;
-    font-weight: bold;
-}
-
-label {
-  margin: 0 auto;
-  position: absolute;
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
-  left: 70px;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size: 18px;
+	/*box-sizing: border-box;*/
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1px;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	border: 0.5px solid black;
+	
 
 }
 
-label .req {
-  margin: 2px;
-  color: blue;
-}
-
-label.active {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  left: 2px;
-  font-size: 14px;
-}
-
-label.active .req {
-  opacity: 0;
-}
-
-label.highlight {
-  color: #ffffff;
-}
-
-
-input, textarea {
-  font-size: 22px;
-  display: block;
-  width: 80%;
-  height: 100%;
-  padding: 5px 10px;
-  background: none;
-  background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
-  border-radius: 2px;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
-  margin: 0 auto;
-}
-
-input:focus, textarea:focus {
-  outline: 10px;
-  border-color: navy;
-}
-
-textarea {
-  border: 10px solid #a0b3b0;
-  resize: vertical;
-}
-
-.field-wrap {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.top-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.top-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
-}
-.top-row > div:last-child {
-  margin: 0;
-}
-
-.button{
-  background-color: transparent;
-  outline: none;
-  border: 0;
-  padding-left: 30%;
-}
-
-.forgot {
-  margin-top: -20px;
-  text-align: center;
-}
-
-/*.genderarea > label{
-  color: white;
-  padding-left:30%;
-}
-
-.gender{
+/*.LoginBox2
+{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	width: 350px;
+	height: 350px;
+	box-sizing: border-box;
+	border-radius: 5%;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	border: 0.5px solid black;
 
 }*/
 
+.user
+{
+	padding: 0;
+	margin: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	top:-50px;
+	/*top: calc(-100px/2);
+	left: calc(50% - 50px);*/
+	
+}
+
+h2
+{
+	margin: 0;
+	padding: 0 0 10px;
+	color: white;
+	text-align: center;
+	font-family: 'Raleway-Light';
+	letter-spacing: 2px;
+
+}
+
+.LoginBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bolder;
+	padding-left: 10px;
+}
+
+
+
+
+.LoginBox input[type="text"],.LoginBox input[type="password"]
+{
+	font-family: 'Raleway-Light';
+	width: 50%;
+	margin-bottom: 15px;
+	border: 2px solid #a0b3b0;
+	font-weight: bold;
+	padding: 2px;
+}
+
+
+.LoginBox a,.LoginBox2 a{
+	font-family: 'Raleway-Light';
+	color: #8080ff;
+	letter-spacing: 1px;	
+}
+.LoginBox a:hover,.LoginBox2 a:hover{
+	
+	color: white
+		
+}
+
+#sign_message,#login_message{
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	font-weight: 1.5em;
+	letter-spacing: 2px;
+	color: black;
+	text-align: center;
+}
+
+#btnSubmitSu{
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	background-color: #8080ff;
+	color: white;
+	border: 1px solid black;
+	letter-spacing: 1px;
+	padding: 4px 10px;
+}
+#btnSubmitSu:hover{
+	background-color: white;
+	color: black;
+}
+
+.LoginBox2 input[type="text"],.LoginBox2 input[type="password"]{
+	font-family: 'Raleway-Light';
+	width: 50%;
+	margin-bottom: 15px;
+	border: 2px solid #a0b3b0;
+	font-weight: bold;
+	padding: 2px;
+}
+
+
+
+#btnSubmitSI{
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	background-color: #8080ff;
+	color: white;
+	border: 1px solid black;
+	letter-spacing: 1px;
+	padding: 4px 10px;
+}
+#btnSubmitSI:hover{
+	background-color: white;
+	color: black;
+}
+
+
+.email{
+	width: 70%;
+}
+
+.LoginBox label
+{
+	color: turquoise;
+}
+
+span{
+	font-family: 'Raleway-Light';
+	font-weight: bold;
+	color: rgb(255, 165, 165);
+	font-size: 12px;
+}
