@@ -20,7 +20,7 @@
 
         <!--Add your content in this div-->
         <div class="mainCon">
-
+            Welcome to your account <?php echo $_SESSION["lastname"]." ".$_SESSION["firstname"]; ?>
         </div>
 
 

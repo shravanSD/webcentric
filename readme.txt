@@ -46,3 +46,8 @@ Changes:(Pranav & Vyas)
 	-signup/login php mysql implementation through ajax
 	-FULLY FUNCTIONAL EXCEPT SESSION IMPLEMENTATION
 
+Changes: (Vyas)
+29/1/18
+	-Session implementation(75%)
+	-welcome message div added in index.php		
+			-visible only if user is logged in

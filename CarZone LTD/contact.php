@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include("startsession.php"); ?>
 <html lang="en-UK">
     <head>
 
@@ -24,7 +25,7 @@
         <!--endoverlay-->
         
         <?php
-            include 'header.html';
+            include 'header.php';
         ?>
 
         <div class="mainCon" style="background-image: url('images/showcase.jpg');">

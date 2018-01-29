@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include("startsession.php"); ?>
 <html lang="en-UK">
     <head>
         <?php include 'head.html'; ?>
@@ -13,7 +14,7 @@
 
     <body>
 
-        <?php include 'header.html';?>
+        <?php include 'header.php';?>
 
         <!--Add your content in this div-->
         <div class="mainCon" style="background-image: url('images/showcase.jpg');">

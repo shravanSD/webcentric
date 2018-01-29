@@ -47,7 +47,7 @@
 
 <body>
 
-    <?php include 'header.html';?>
+    <?php include 'header.php';?>
 
     <!--Add your content in this div-->
     <div class="mainCon" style="background-image: url('images/showcase.jpg');">

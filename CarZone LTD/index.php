@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+        <?php
+        include("startsession.php");
+        ?>
 <html lang="en-UK">
     <head>
         <?php
@@ -14,11 +17,25 @@
     <body>
         
         <?php
-            include 'header.html';
+            include 'header.php';
         ?>
+        
 
 
         <div class="mainCon">
+            <div class="welcomeTagDiv">
+                <?php
+                    if (isset($_SESSION["sessionSet"])) {
+                        if ($_SESSION["gender"]=="M") {
+                            $designation ="Mr.";
+                        }
+                        else{
+                            $designation = "Mrs.";
+                        }
+                        echo "<p id=\"welcomeTag\">CarZone LTD welcomes you {$designation} {$_SESSION["lastname"]} {$_SESSION["firstname"]}</p>";
+                    }
+                 ?>
+            </div>
             <div class="showcaseImage"></div>
             <div class="sliderwrap">
                 <div class="slider" style="max-width: 900px;">

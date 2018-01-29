@@ -35,8 +35,20 @@
                 </li>
                 <li class="dropdown"><a href="contact.php">Contact us</a>         
                 </li>
-                <li style="float: right; margin-right: 40px;"><a href="signin.php">Login</a></li>
-                <li style="float: right;"><a href="signup.php">Sign up</a></li>
+                
+                <?php 
+                    // session_start();
+                    if(isset($_SESSION["sessionSet"])){
+                       echo "<li style=\"float: right; margin-right: 40px;\"><a href=\"php/logoutprocess.php\">Log Out</a></li>
+                            <li style=\"float: right;\"><a href=\"myaccount.php\">My Account</a></li>"; 
+                    }
+                    else{
+                        
+                        echo  "<li style=\"float: right; margin-right: 40px;\"><a href=\"signin.php\">Login</a></li>
+                            <li style=\"float: right;\"><a href=\"signup.php\">Sign up</a></li>";
+                    }
+                ?>
+
             </ul>
         </nav>
     </div>

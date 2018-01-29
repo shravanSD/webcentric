@@ -8,11 +8,23 @@
 
     if(mysqli_num_rows($result)==1){
     	while ($row = mysqli_fetch_assoc($result)) {
-    		echo "Logged In";
+
+            //session variables
+            session_start();
+            $_SESSION["sessionSet"] = 1;
+            $_SESSION["member_email"] = $row["member_email"];
+            $_SESSION["firstname"] = $row["firstname"];
+            $_SESSION["lastname"] = $row["lastname"];
+            $_SESSION["gender"] = $row["gender"];
+            $_SESSION["phonenumber"] = $row["phonenumber"];
+            // include("../index.php");
+            // header("Location:../index.php");
+
+    		echo "Logged In...Redirecting to HomePage";
     	}
     }
     else{
-    	echo "No rec";
+    	echo "Invalid User";
     }
 
 

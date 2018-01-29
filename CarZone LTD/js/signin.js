@@ -17,18 +17,26 @@
 				// return false;
 			}
 			else {
-				alert("aa");
+				alert("Processing...");
 				signinprocessing(emailadd,password);
 
 			}
 
 		}
 
+		function indexLoc(){
+			window.location.assign("index.php");
+		}
+
 		function signinprocessing(emailadd,password){
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function(){
 				if(this.readyState ==4 && this.status==200){
-					document.getElementById("login_message").innerHTML = this.response;
+					var str = this.response;
+					document.getElementById("login_message").innerHTML =str;
+					if(str.charAt(0)=='L'){
+						setTimeout(indexLoc(),2000);
+					}
 				}
 			}
 
