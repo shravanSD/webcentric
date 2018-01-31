@@ -21,29 +21,28 @@
         <div class="mainCon" style="background-image: url('images/showcase.jpg');">
             <br><br><br><br>
             <div class="LoginBox2" id="LoginBox2">
-            <img src="images/user2.png" class="user"alt="not found">
+                <img src="images/user2.png" class="user"alt="not found">
             
             
-            <h2>Login</h2>
-            <br>
-            <form name="form1" action="php/loginprocess.php" method="post">
-                
-                
-                <input type="text" name="email" id="email" placeholder="E-mail address"><span id="email_err"></span><br><br>
-                <!-- <p>Password</p> -->
-                
-                <input type="password" name="password" id="password" placeholder="Password">
-                <span id="pass_err"></span>
-
+                <h2>Login</h2>
                 <br>
-                <br>
-                <input type="button" name="btnSubmitSI" id="btnSubmitSI" value="Sign In" onclick="f2()"><br><br>
-                <a href="signup.php">Not a member?  Sign up here.</a>
+                <form name="form1" action="php/loginprocess.php" method="post">
+                
+                
+                    <input type="text" name="email" id="email" placeholder="E-mail address"><span id="email_err"></span><br><br>
+                    <!-- <p>Password</p> -->
+                    
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <span id="pass_err"></span>
 
-        </div>
+                    <br>
+                    <br>
+                    <input type="button" name="btnSubmitSI" id="btnSubmitSI" value="Sign In" onclick="f2()"><br><br>
+                    Not a member?  Sign up <a href="signup.php">here</a>.
+                </form>
+            </div>
         <br>
-            <p id="login_message"></p>
-            
+        <p id="login_message"></p>
         </div>
 
         

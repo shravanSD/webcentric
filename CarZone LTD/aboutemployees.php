@@ -23,8 +23,8 @@
                 $db_username="root";
                 $db_pass="";
                 $db_name="carzone";
-                $connection =mysqli_connect($db_host,$db_username,$db_pass) or die ("could not connect to mysql");
-                $db = mysqli_select_db($connection,$db_name) or die ("no database");
+                $connection =mysqli_connect($db_host,$db_username,$db_pass) or die ("Could not connect to database.");
+                $db = mysqli_select_db($connection,$db_name) or die ("No database");
                 //echo "successful connection <br>";
                 $me=0;
             ?>

@@ -7,7 +7,7 @@
         <?php include 'head.html'; ?>
 
         <!--add your individual style/js here-->
-        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" type="text/css" href="style/myaccount.css">
         <script type="text/javascript" src=""></script>
         <!--addtitle-->
         <title></title>
@@ -20,7 +20,10 @@
 
         <!--Add your content in this div-->
         <div class="mainCon">
-            Welcome to your account <?php echo $_SESSION["lastname"]." ".$_SESSION["firstname"]; ?>
+            <div class="grid-container">
+                Welcome to your account
+                <p id="name"><?php echo $_SESSION["firstname"]." ".$_SESSION["lastname"]; ?></p>
+            </div>
         </div>
 
 

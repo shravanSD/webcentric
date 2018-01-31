@@ -6,7 +6,7 @@
     <div class="below_header">
         <nav>
             <ul>
-                <li style="width:70px; margin-left: 40px;"><a class="active" href="index.php"><img src="images/logo-favicon.png" width="16px" height="16px" ></a></li>
+                <li style="width:70px; margin-left: 40px;"><a href="index.php"><img src="images/logo-favicon.png" width="16px" height="16px" ></a></li>
 
                 <li class="dropdown"><a href="#">About</a>
                     <ul class="dropdown-content">
@@ -17,14 +17,8 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a href="#">Booking</a>
-                    <ul class="dropdown-content">
-                        <li>
-                            <a href="bookingserv.php">Book a servicing date</a>
-                            <a href="bookingcheck.php">Book a check-up date</a>
-                        </li>
-                    </ul>            
-                </li>
+                <li class="dropdown"><a href="booking.php">Booking</a></li>
+
                 <li class="dropdown"><a href="#">Feedback</a>
                     <ul class="dropdown-content">
                         <li>

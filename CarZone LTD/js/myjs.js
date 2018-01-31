@@ -1,6 +1,4 @@
 var head = document.getElementsByTagName['head'];
-var script = document.createElement('script');
-script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
 
 $(document).ready(function()
 {
@@ -13,7 +11,7 @@ $(document).ready(function()
             var windowpos = $(window).scrollTop();
             if (windowpos >= banner.outerHeight())
             {
-                navbar.addClass("fixedTop");
+                navbar.addClass('fixedTop');
             }
             else
             {

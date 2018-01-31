@@ -1,7 +1,3 @@
-script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
-script.src="jquery-3.2.1.js";
-script.src="jquery-3.2.1.min.js";
-
 $(document).ready(function() {
     var myIndex = 0;
     carousel();

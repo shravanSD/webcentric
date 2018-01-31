@@ -184,12 +184,6 @@ ALTER TABLE `rendezvous`
   ADD KEY `member_email` (`member_email`);
 
 --
--- Indexes for table `stakeholders`
---
-ALTER TABLE `stakeholders`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 

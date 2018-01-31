@@ -1,0 +1,56 @@
+body {
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cartable {
+	height: 100%;
+	width: 100%;
+	
+}
+
+#cartable td {
+	height: 50%;
+	width: 50%;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.thickerborder {
+	border: 2px solid blue;
+}
+
+.mainCon {
+	/*padding-top: 50px;*/
+	padding-bottom: 50px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Raleway-Light';
+	/*height: 700px;*/
+}
+
+#error_login {
+	text-align: center;
+	font-size: 40px;
+	background-color: #ded;
+	opacity: 0.8;
+}
+
+#bookingform {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ddd;
+}
+
+#bktable {
+	margin-left: auto;
+	margin-right: auto;
+	/*text-align: center;*/
+	width: 100%;
+	border: 1px solid black;
+}
+

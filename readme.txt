@@ -51,3 +51,9 @@ Changes: (Vyas)
 	-Session implementation(75%)
 	-welcome message div added in index.php		
 			-visible only if user is logged in
+
+Changes: (Shravan)
+31/01/18
+
+	-Added booking table (Not functional)
+	-Update your database using carzone.sql found in CarZone LTD folder.

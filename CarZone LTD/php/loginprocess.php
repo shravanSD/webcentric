@@ -20,7 +20,7 @@
             // include("../index.php");
             // header("Location:../index.php");
 
-    		echo "Logged In...Redirecting to HomePage";
+    		echo "Logged in. Redirecting to Homepage";
     	}
     }
     else{

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-        <?php
-        include("startsession.php");
-        ?>
+<?php include("startsession.php"); ?>
 <html lang="en-UK">
     <head>
         <?php
@@ -30,9 +28,9 @@
                             $designation ="Mr.";
                         }
                         else{
-                            $designation = "Mrs.";
+                            $designation = "Mrs./Ms.";
                         }
-                        echo "<p id=\"welcomeTag\">CarZone LTD welcomes you {$designation} {$_SESSION["lastname"]} {$_SESSION["firstname"]}</p>";
+                        echo "<p id=welcomeTag>CarZone LTD welcomes you {$designation} {$_SESSION["firstname"]}.</p>";
                     }
                  ?>
             </div>
