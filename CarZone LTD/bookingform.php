@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<?php
-	include 'startsession.php';
-	$db = mysqli_connect("localhost", "root", "", "carzone") or die("Could not connect to database.");
-?>
-<html>
-	<head>
-		<?php include 'head.html';?>
-		<link rel="stylesheet" href="style/booking.css">
-		<script type="text/javascript" src="js/booking.js"></script>
-		<!-- <script>
-			$(document).ready(function(){
-			    $("input:radio").click(function(){
-			        alert(this.value);
-			    });
-			});
-		</script> -->
-	</head>
 
-	<body>
-		<form id="bookingform" method="post">
+
+		<form id="bookingform" method="post" action="">
 			<fieldset>
 				<legend>Fill the form below to complete booking</legend>
 				<table id="bktable">
@@ -82,13 +64,11 @@
 							<p id="message"></p>
 						</td>
 						<td style="text-align: right;">
-							<input type="submit" name="btnsubmit" value="Submit" onclick="submit()">
-							<input type="reset" name="btnreset" value="Reset">
+							<input type="button" name="btnsubmit" id="btnsubmit" value="Submit" onclick="submitData()"> <!-- Vyas-type change from submit to button -->
+							<input type="reset" name="btnreset" id="btnreset" value="Reset">
 						</td>
 					</tr>
 				</table>
 			</fieldset>
 
 		</form>
-	</body>
-</html>

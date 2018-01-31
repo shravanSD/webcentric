@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<?php include 'startsession.php'; ?>
+<?php include 'startsession.php';
+$db = mysqli_connect("localhost", "root", "", "carzone") or die("Could not connect to database."); //Vyas
+ ?>
+
 <html lang="en-UK">
     <head>
         <?php include 'head.html'; ?>
         <link rel="stylesheet" href="style/booking.css">
+        <script type="text/javascript" src="js/booking.js"></script><!--Vyas -->
         <title>Booking | CarZone</title>
     </head>
 
@@ -21,7 +25,8 @@
 				        $designation = "Mrs./Ms.";
 				    }
 				    echo "<p style=\"text-align: center; font-size: 25px; background-color: #ddd; width: 300px; margin-left: auto; margin-right: auto;\" id=\"name\">{$designation} {$_SESSION["firstname"]} {$_SESSION["lastname"]}</p>";
-				    include 'bookingform.php';
+
+				        include 'bookingform.php';
 				}
 				else
 				{
@@ -29,6 +34,8 @@
 				}
 			?>
 		</div>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
 
 	<?php include 'footer.html' ?>
 

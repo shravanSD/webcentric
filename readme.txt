@@ -57,3 +57,16 @@ Changes: (Shravan)
 
 	-Added booking table (Not functional)
 	-Update your database using carzone.sql found in CarZone LTD folder.
+
+Changes: (Vyas)
+	-JS fix (semicolumns missing,case sensitive variables fix);	
+		-loop added to get immat number from vehicle container
+
+	-bookingform.php
+		-other tags deleted except the form block
+		-submit button type changed from submit to button
+	
+	Everything is working up to the if statement in the bookingprocess.php file
+	-Login redirection is also working properly
+
+	Also, navbar sublist will be fixed later
