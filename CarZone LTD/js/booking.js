@@ -1,38 +1,63 @@
+$(document).ready(function() {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+	    target.fadeToggle(100);
+	    /*if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, 2000);
+	    }*/
+
+	});
+});
+
 function submitData() {
 	var bookdate = document.getElementById('bkdate').value
 	var booktime = document.getElementById('bktime').value;
-	var vehiclegroup = document.getElementsByTagName('vehicle');
+	var vehiclegroup = document.getElementsByName('vehicle');
 	var bookvehicle;
 
-		for (var i = 0; i < vehiclegroup.length; i++) {
-   			 if (vehiclegroup[i].checked) {        
-        		bookvehicle = vehiclegroup[i].value;    
-        		alert(bookvehicle);   
-    		}
+	for (var i = 0; i < vehiclegroup.length; i++) {
+		if (vehiclegroup[i].checked) {        
+    		bookvehicle = vehiclegroup[i].value;
 		}
+	}
 	
 	var booksubject = document.getElementById('bksubject').value;
 	var bookdetails = document.getElementById('bkdetails').value;
 
-	alert("Hello World-By Vyas");
+	// if (!checkDate(bookdate))
+	// {
+	// 	alert("Date must be in the future");
+	// 	return false;
+	// }
 
-	bookingprocessing(bookdate, booktime, booksubject, bookdetails, bookvehicle);
+	if (bookdate == '' | booktime == '' | bookvehicle == '' | booksubject == '' | bookdetails == '')
+	{
+		alert("Fields cannot be left blank.")
+	}
+	else
+	{
+		bookingprocessing(bookdate, booktime, booksubject, bookdetails, bookvehicle);
+	}
 }
 
-// function checkDate(value) {
-// 	var now = new Date();
-// 	if (value == now) {
-// 		alert("Date must be in the future");
-// 		return false;
-// 	}
-// }
+function checkDate(value) {
+	var now = new Date();
+	if (value <= now) {
+		return false;
+	}
+}
 
 function bookingprocessing(bookdate, booktime, booksubject, bookdetails, bookvehicle) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if(this.readyState == 4 && this.status== 200) {
 			var str = this.response;
-			document.getElementById("message").innerHTML =str;
+			document.getElementById("bookingform").reset();
+			document.getElementById("message").innerHTML = str;
 		}
 	}
 

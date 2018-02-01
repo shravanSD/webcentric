@@ -24,9 +24,11 @@ $db = mysqli_connect("localhost", "root", "", "carzone") or die("Could not conne
 				    else{
 				        $designation = "Mrs./Ms.";
 				    }
-				    echo "<p style=\"text-align: center; font-size: 25px; background-color: #ddd; width: 300px; margin-left: auto; margin-right: auto;\" id=\"name\">{$designation} {$_SESSION["firstname"]} {$_SESSION["lastname"]}</p>";
+				    echo "<p style=\"text-align: center; font-size: 25px; background-color: rgba(221,221,221,0.8); width: 300px; margin-left: auto; margin-right: auto;\" id=\"name\">{$designation} {$_SESSION["firstname"]} {$_SESSION["lastname"]}</p>";
 
-				        include 'bookingform.php';
+					include 'bookingform.php';
+
+				    echo "<div class=\"resume\" id=\"addnew\">Something here</div>";
 				}
 				else
 				{

@@ -70,3 +70,10 @@ Changes: (Vyas)
 	-Login redirection is also working properly
 
 	Also, navbar sublist will be fixed later
+
+01/02/18
+Changes: Shravan
+
+	- Booking now works
+	- Added a special <td> to add new car - not functional yet
+	- implementing more jQuery for the add new car part

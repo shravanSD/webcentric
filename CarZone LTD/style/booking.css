@@ -35,15 +35,14 @@ body {
 #error_login {
 	text-align: center;
 	font-size: 40px;
-	background-color: #ded;
-	opacity: 0.8;
+	background-color: rgba(221,221,221,0.8);
 }
 
 #bookingform {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #ddd;
+	background-color: rgba(221,221,221,0.8);
 }
 
 #bktable {
@@ -54,3 +53,6 @@ body {
 	border: 1px solid black;
 }
 
+.resume {
+	display: none;
+}
