@@ -1,33 +1,3 @@
-<?php 
-
-    // session_start();
-    
-    // $db = mysqli_connect("localhost", "root", "", "carzone");
-
-    // if (isset($_POST['btnSubmitSU'])) {
-    //     session_start();
-    //     $firstname = mysql_real_escape_string($_POST['fname']);
-    //     $lastname = mysql_real_escape_string($_POST['lname']);
-    //     $member_email = mysql_real_escape_string($_POST['email']);
-    //     $phonenumber = mysql_real_escape_string($_POST['tel']);
-    //     $gender = mysql_real_escape_string($_POST['gender']);
-    //     $password = mysql_real_escape_string($_POST['password']);
-    //     $confpassword = mysql_real_escape_string($_POST['confpassword']);
-
-
-    //     if (password == confpassword) {
-    //         $password = md5($password); //hashing for security
-    //         $sql = "INSERT INTO member(member_email, password, firstname, lastname, phonenumber, gender) VALUES ('$member_email', '$password', '$firstname', '$lastname', '$phonenumber', '$gender')";
-    //         mysql_query($db, $sql);
-    //         $_SESSION['messsage'] = "You are now successfully logged in!";
-    //         $_SESSION['firstname'] = $firstname;
-    //         header("location: index.php"); //redirect
-    //     }else{
-    //         $_SESSION['messsage'] = "Error";
-    //     }
-    // }
-
-
  ?>
 
 <!-- Registration Page -->
@@ -69,38 +39,34 @@
                 <input type="text" name="email" id="email" placeholder="E-mail address">
                 <span id="email_err"></span>
 
-                <input type="text" name="tel" id="tel" placeholder="Telephone no."><span id="tel_err"></span><br>
-
+                <input type="password" name="password" id="password" placeholder="Password">
+                <span id="pass_err"></span><br>
+                <!-- <p>Confirm Password</p> -->
+                
+                <input type="password" name="confpassword" id="confpassword" placeholder="Confirm Password">
+                <span id="confpass_err"></span><br>
+                <span id="passmatch_err"></span><br>
 
                 Gender:
                 <select name="gender" id="gender">
                     <option value="M">Male</option>
                     <option value="F">Female</option>
                 </select><br><br>
-                <!-- <p>Password</p> -->
-                <input type="password" name="password" id="password" placeholder="Password">
-                <span id="pass_err"></span><br>
-                <!-- <p>Confirm Password</p> -->
-                <input type="password" name="confpassword" id="confpassword" placeholder="Confirm Password">
-                <span id="confpass_err"></span><br>
-                <span id="passmatch_err"></span><br>
+
+                <input type="text" name="tel" id="tel" placeholder="Telephone no."><span id="tel_err"></span><br>
+
+
                 
-<!--                 Gender: <br>
-                <input type="radio" id="gender" name="gender" value="M" checked>Male <span></span>
-                <input type="radio" id="gender" name="gender" value="F" checked>Female <br><br>
- --> <!--                <input type="button" value="Display Nationality" onclick='dispNat("nationality")'><br>
-                <div id=dumbo>
-                    <label id="dummynat"></label>
-                </div> -->
-                <!-- //javascript function to get choice && display -->
+                <!-- <p>Password</p> -->
                 
 
-                <input type="checkbox" name="signupterms" id="signupterms" value="terms"> I agree to terms of use. <br>
+                
+                <input type="checkbox" name="signupterms" id="signupterms" value="terms">I agree to terms of use.<br>
                 <a href="terms.php">Terms &amp Conditions</a>
                 <br>
                 <br>
                 <input type="button" name="btnSubmitSu" id="btnSubmitSu" onclick="f1()" value="Sign up"><br><br>
-                <a href="signin.php">Already a member?  Sign in instead</a>
+                Already a member? <a href="signin.php">Sign in</a> instead.
             </div>
             <br>
 
