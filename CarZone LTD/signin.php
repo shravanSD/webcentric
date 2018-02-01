@@ -39,10 +39,10 @@
                     <br>
                     <input type="button" name="btnSubmitSI" id="btnSubmitSI" value="Sign In" onclick="f2()"><br><br>
                     Not a member?  Sign up <a href="signup.php">here</a>.
+                    <p id="login_message"></p>
                 </form>
             </div>
         <br>
-        <p id="login_message"></p>
         </div>
 
         

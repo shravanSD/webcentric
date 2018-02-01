@@ -16,7 +16,6 @@ function f2(){
 		// return false;
 	}
 	else {
-		alert("Processing...");
 		signinprocessing(emailadd,password);
 	}
 

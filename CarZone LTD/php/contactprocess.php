@@ -1,8 +1,6 @@
 <?php
 	
-	$connection = mysqli_connect("localhost","root","","webproject");
-
-	
+	$connection = mysqli_connect("localhost","root","","carzone");
 
 	$name = $_POST["txtname"];
 	$email = $_POST["txtemail"];

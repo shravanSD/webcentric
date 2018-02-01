@@ -17,7 +17,6 @@ legend{
 }
 #contacttable td:first-child{
 	width: 50%;
-	
 }
 
 .contactusform{
@@ -217,4 +216,8 @@ input[id="submitbtn"]:hover,input[id="resetbtn"]:hover,input[id="locatebutton"]:
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.noscroll {
+	overflow: hidden;
 }

@@ -1,15 +1,17 @@
 $(document).ready(function() {
-	$('a[href^="#"]').on('click', function(event) {
+	$('#addnew').on('click', function(event) {
+		$('#overlay').toggle(500);
+		$('body').addClass('noscroll');
+	});
 
-	    var target = $( $(this).attr('href') );
-	    target.fadeToggle(100);
-	    /*if( target.length ) {
-	        event.preventDefault();
-	        $('html, body').animate({
-	            scrollTop: target.offset().top
-	        }, 2000);
-	    }*/
+	$('#btnClose').click(function(){
+		$("#overlay").toggle(500);
+		$('body').removeClass('noscroll');
+	});
 
+	$('#btnsubmit').click(function(){
+		$("#overlay").toggle(500);
+		$('body').removeClass('noscroll');
 	});
 });
 
@@ -44,11 +46,39 @@ function submitData() {
 	}
 }
 
+function addCar() {
+	var immat = document.getElementById('immatnum').value;
+	var make = document.getElementById('make').value;
+	var model = document.getElementById('model').value;
+	var year = document.getElementById('year').value;
+
+	if (immat == '' | make == '' | model == '' )
+	{
+		alert("Fields cannot be left blank");
+	}
+	else
+	{
+		addnewcarprocessing(immat, make, model, year);
+	}
+}
+
 function checkDate(value) {
 	var now = new Date();
 	if (value <= now) {
 		return false;
 	}
+}
+
+function addnewcarprocessing(immat, make, model, year) {
+	var xhttp = new XMLHttpRequest();
+
+	if(this.readyState == 4 && this.status== 200) {
+		alert("Please refresh your page.");
+	}
+
+	xhttp.open("POST", "php/addcarprocess.php", true);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send("immatnum=" + immat + "&make=" + make + "&model=" + model + "&year=" + year);
 }
 
 function bookingprocessing(bookdate, booktime, booksubject, bookdetails, bookvehicle) {

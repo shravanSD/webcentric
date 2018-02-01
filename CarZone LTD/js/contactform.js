@@ -118,13 +118,15 @@ function validatephonenum(num){
 
 $(document).ready(function(){
 	$('#locatebutton').click(function(){
-		$("#overlay").fadeIn(1500);
+		$("#overlay").fadeIn(500);
+		$('body').addClass('noscroll');
 		$("#garageLocation").css({"display":"block"});
 		mapInit();
 	});
 
 	$("#btnClose").click(function(){
-		$("#overlay").fadeOut(1500);
+		$("#overlay").fadeOut(500);
+		$('body').removeClass('noscroll');
 	});
 });
 

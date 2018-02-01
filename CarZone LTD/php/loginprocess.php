@@ -17,8 +17,6 @@
             $_SESSION["lastname"] = $row["lastname"];
             $_SESSION["gender"] = $row["gender"];
             $_SESSION["phonenumber"] = $row["phonenumber"];
-            // include("../index.php");
-            // header("Location:../index.php");
 
     		echo "Logged in. Redirecting to Homepage";
     	}

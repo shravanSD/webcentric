@@ -77,3 +77,10 @@ Changes: Shravan
 	- Booking now works
 	- Added a special <td> to add new car - not functional yet
 	- implementing more jQuery for the add new car part
+
+(20:50)
+
+	- Existing users can add new cars.
+	- New user can add new cars.
+	- Modified contact us page, blocked BODY from scrolling when Google Maps is opened.
+	- jQuery is awesome :v

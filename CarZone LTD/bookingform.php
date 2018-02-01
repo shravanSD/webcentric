@@ -1,15 +1,17 @@
 <form id="bookingform" method="post" action="">
-	<fieldset>
-		<legend>Fill the form below to complete booking</legend>
+	<!-- <fieldset> -->
+		<legend style="margin-left: 10px; font-size: 20px;"><strong>Fill</strong> the form below to <strong>complete</strong> booking</legend>
+		<br>
+		<br>
 		<table id="bktable">
 			<tr>
 				<td class="rightadj"><label for="bkdate">Booking Date</label></td>
-				<td><input type="date" id="bkdate" name="bkdate"></td>
+				<td style="text-align: center;"><input type="date" id="bkdate" name="bkdate"></td>
 			</tr>
 
 			<tr>
 				<td><label for="bktime">Booking Time</label></td>
-				<td><input type="time" id="bktime" name="bktime"></td>
+				<td style="text-align: center;"><input type="time" id="bktime" name="bktime"></td>
 			</tr>
 
 			<tr id="choosecarrow" >
@@ -33,12 +35,12 @@
 								$mk = $row["make"];
 								$mdl = $row["model"];
 								$yr = $row["year"];
-								echo "<td>" . $immat . "<br>" . $mk . "<br>" . $mdl . "<br>" . $yr . "<br> <input type='radio' value='{$immat}' name='vehicle'></td>";
+								echo "<td style=\"background-color: lightblue;\">" . $immat . "<br>" . $mk . "<br>" . $mdl . "<br>" . $yr . "<br> <input type='radio' value='{$immat}' name='vehicle'></td>";
 
 								if ($inserted == $rowcount && !($inserted % 2))
 								{
 									echo "</tr>";
-									echo "<tr><td><br><br>Add <a href=\"#addnew\">new</a> car<br><br><br></td></tr>";
+									echo "<tr><td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
 								}
 								
 								if (!($inserted % 2))
@@ -47,8 +49,12 @@
 								}
 							}
 							if (($inserted % 2))
-								echo "<td><br><br>Add <a href=\"#addnew\">new</a> car<br><br><br></td>";
+								echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
 							echo "</tr>";
+						}
+						if (!($rowcount))
+						{
+							echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
 						}
 						echo "</table>";
 					?>
@@ -70,11 +76,12 @@
 					<p id="message"></p>
 				</td>
 				<td style="text-align: right;">
-					<input type="button" name="btnsubmit" id="btnsubmit" value="Submit" onclick="submitData()"> <!-- Vyas-type change from submit to button -->
-					<input type="reset" name="btnreset" id="btnreset" value="Reset">
+					<input type="button" class="buttoncss" name="btnsubmit" id="btnsubmit" value="Submit" onclick="submitData()"> <!-- Vyas-type change from submit to button -->
+					<input type="reset" class="buttoncss" name="btnreset" id="btnreset" value="Reset">
 				</td>
 			</tr>
 		</table>
-	</fieldset>
+		<br>
+<!-- 	</fieldset> -->
 
 </form>
