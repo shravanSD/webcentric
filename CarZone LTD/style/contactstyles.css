@@ -188,7 +188,7 @@ input[id="submitbtn"]:hover,input[id="resetbtn"]:hover,input[id="locatebutton"]:
 	position: fixed;
 	top:15px;
 	right: 15px;
-	z-index: 7;
+	z-index: 15;
 	padding: 7px 10px;
 	border: none;
 	border-radius: 15px;

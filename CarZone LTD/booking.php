@@ -38,7 +38,7 @@ $db = mysqli_connect("localhost", "root", "", "carzone") or die("Could not conne
 	            				<td class="scol"><input type="number" id="year" name="year" min="1990" max="2018" value="2018"></td>
 	            			</tr>
 	            			<tr>
-	            				<td colspan="2" style="text-align: right;"><input type="button" name="btnsubmit" id="btnsubmit" value="Submit" onclick="addCar()"><input type="reset" name="btnreset" id="reset" value="Reset"></td>
+	            				<td colspan="2" style="text-align: right;"><input type="button" name="btnsubmitcar" id="btnsubmitcar" value="Submit" onclick="addCar()"><input type="reset" name="btnreset" id="reset" value="Reset"></td>
 	            			</tr>
 	            		</table>
             		</fieldset>

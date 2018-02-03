@@ -2,6 +2,7 @@ $(document).ready(function() {
 	$('#addnew').on('click', function(event) {
 		$('#overlay').toggle(500);
 		$('body').addClass('noscroll');
+		// $('#autorefresh').children("div:first").remove();
 	});
 
 	$('#btnClose').click(function(){
@@ -9,11 +10,31 @@ $(document).ready(function() {
 		$('body').removeClass('noscroll');
 	});
 
-	$('#btnsubmit').click(function(){
+	$('#btnsubmitcar').click(function(){
 		$("#overlay").toggle(500);
-		$('body').removeClass('noscroll');
+		$('body').removeClass('noscroll');		
 	});
+
+	// $('#btnsubmit').click(function(evt) {
+	// 	$('#autorefresh').load("addcar.php");
+	// 	evt.preventDefault();
+	// });
+	
 });
+
+function getData() {
+		$.ajax({
+			url: 'addcar.php',
+			type: 'post',
+			success: function(data) {
+				if (data.success) {
+					setTimeout(function() {
+						location.reload;
+					}, 1000);
+				}
+			}
+		});
+	}
 
 function submitData() {
 	var bookdate = document.getElementById('bkdate').value
@@ -73,7 +94,7 @@ function addnewcarprocessing(immat, make, model, year) {
 	var xhttp = new XMLHttpRequest();
 
 	if(this.readyState == 4 && this.status== 200) {
-		alert("Please refresh your page.");
+		// alert("Please refresh your page.");
 	}
 
 	xhttp.open("POST", "php/addcarprocess.php", true);

@@ -47,6 +47,10 @@ body {
 	border-radius: 15px 50px;
 }
 
+textarea {
+	border-radius: 5px;
+}
+
 #bktable {
 	margin-left: auto;
 	margin-right: auto;

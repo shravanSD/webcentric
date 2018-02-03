@@ -17,47 +17,12 @@
 			<tr id="choosecarrow" >
 				<td>
 					<label for="choosecar">Choose/Add your car</label>
+					<input type="button" id="refreshbutton" name="refreshbutton" value="Refresh" onclick="getData()">
 				</td>
 				<td>
-					<?php
-						$query=mysqli_query($db,"SELECT * FROM car where member_email = '" . $_SESSION["member_email"] . "'");
-						$rowcount = mysqli_num_rows($query);
-						$inserted = 0;
-						echo "<table id=\"cartable\">";
-						
-						while ($inserted < $rowcount)
-						{
-							echo "<tr>";
-							while ($row = mysqli_fetch_array($query))
-							{
-								$inserted++;
-								$immat = $row["immat_num"];
-								$mk = $row["make"];
-								$mdl = $row["model"];
-								$yr = $row["year"];
-								echo "<td style=\"background-color: lightblue;\">" . $immat . "<br>" . $mk . "<br>" . $mdl . "<br>" . $yr . "<br> <input type='radio' value='{$immat}' name='vehicle'></td>";
-
-								if ($inserted == $rowcount && !($inserted % 2))
-								{
-									echo "</tr>";
-									echo "<tr><td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
-								}
-								
-								if (!($inserted % 2))
-								{
-									break;
-								}
-							}
-							if (($inserted % 2))
-								echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
-							echo "</tr>";
-						}
-						if (!($rowcount))
-						{
-							echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
-						}
-						echo "</table>";
-					?>
+					<div id="autorefresh">
+						<?php include 'addcar.php'; ?>
+					</div>
 				</td>
 			</tr>
 
@@ -68,7 +33,7 @@
 
 			<tr>
 				<td style="width: 40%;"><label style="vertical-align: text-top;" for="bkdetails">Details</label></td>
-				<td style="text-align: left; width: 60%;"><input style="width: 95%; height: 100px; text-align: top;" type="text" id="bkdetails" name="bkdetails" placeholder="Details"></td>
+				<td style="text-align: left; width: 60%;"><textarea style="width: 100%; height: 100px; text-align: top; resize: none;" type="text" id="bkdetails" name="bkdetails" placeholder="Details"></textarea></td>
 			</tr>
 
 			<tr>
