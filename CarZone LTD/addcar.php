@@ -1,6 +1,4 @@
 <?php
-	session_start();
-	
 	$query=mysqli_query($db,"SELECT * FROM car where member_email = '" . $_SESSION["member_email"] . "'");
 	$rowcount = mysqli_num_rows($query);
 	$inserted = 0;

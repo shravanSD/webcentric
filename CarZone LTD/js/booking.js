@@ -14,12 +14,16 @@ $(document).ready(function() {
 		$("#overlay").toggle(500);
 		$('body').removeClass('noscroll');		
 	});
-
 	// $('#btnsubmit').click(function(evt) {
 	// 	$('#autorefresh').load("addcar.php");
 	// 	evt.preventDefault();
 	// });
-	
+});
+
+$(document).on( 'keydown', function ( e ) {
+	if ( e.keyCode === 27 ) { // ESC
+		$('#overlay').hide(500);
+	}
 });
 
 function getData() {

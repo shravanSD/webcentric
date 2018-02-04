@@ -84,3 +84,8 @@ Changes: Shravan
 	- New user can add new cars.
 	- Modified contact us page, blocked BODY from scrolling when Google Maps is opened.
 	- jQuery is awesome :v
+
+04/02/18
+Changes: Shravan
+
+	- Added jQuery for ESC key when adding a new car. (Quicker)
