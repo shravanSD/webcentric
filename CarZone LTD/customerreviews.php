@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="style/reviewstyles.css">
         <script type="text/javascript" src=""></script>
         <!--addtitle-->
-        <title></title>
+        <title>Review | CarZone</title>
 
     </head>
 
@@ -19,9 +19,7 @@
         <!--Add your content in this div-->
         <div class="mainCon">
             <!-- customerReview -->
-        <?php
-        include 'reviewCustomerReview.php';
-        ?>
+            <?php include 'reviewCustomerReview.php';?>
         </div>
 
 

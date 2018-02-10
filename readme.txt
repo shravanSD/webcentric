@@ -104,4 +104,10 @@ Changes: Shakill
 Changes: Vyas
 	
 	-add car refresh fixed.
-	-some css mods in car booking 
+	-some css mods in car booking
+
+10/02/18
+Changes: Shravan
+	
+	- Modded CSS for review: caption element conflicted with that of footer.html, #feedbackform specified
+	- Added title to Review file

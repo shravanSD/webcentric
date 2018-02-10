@@ -123,6 +123,6 @@ input[id="btnSubmit"]:hover,input[id="btnReset"]:hover{
 	color: black;
 }
 
-caption{
+#feedbackform caption{
 	text-shadow: 0 0 4px white;
 }
