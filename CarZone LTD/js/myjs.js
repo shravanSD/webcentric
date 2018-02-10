@@ -18,6 +18,13 @@ $(document).ready(function()
                 navbar.removeClass('fixedTop');
             }
         });
+    $(".dropdown").mouseover(function(){
+        $("> .dropdown-content",this).css({"display":"block"});
+    });
+
+    $(".dropdown").mouseleave(function(){
+        $("> .dropdown-content",this).css({"display":"none"});
+    });
 }
 );
 

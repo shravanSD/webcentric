@@ -1,44 +1,62 @@
 $(document).ready(function() {
-	$('#addnew').on('click', function(event) {
-		$('#overlay').toggle(500);
+
+	displayCars();
+
+});
+
+$(document).on('click','#addnew',function(event) { //binding after document has been loaded
+		$('#overlay').show(500);
 		$('body').addClass('noscroll');
-		// $('#autorefresh').children("div:first").remove();
-	});
+		$("#autoRefresh").empty();	
+});
 
-	$('#btnClose').click(function(){
-		$("#overlay").toggle(500);
-		$('body').removeClass('noscroll');
-	});
+$(document).on('click','#btnClose',function(event) {//binding after document has been loaded
+		$("#overlay").hide(500);
+		$('body').removeClass('noscroll');	
+		displayCars();
+});
 
-	$('#btnsubmitcar').click(function(){
-		$("#overlay").toggle(500);
-		$('body').removeClass('noscroll');		
-	});
-	// $('#btnsubmit').click(function(evt) {
-	// 	$('#autorefresh').load("addcar.php");
-	// 	evt.preventDefault();
-	// });
+$(document).on('click','#btnsubmitcar',function(event) {//binding after document has been loaded
+		addCar();
+		$("#overlay").hide(500);
+		$('body').removeClass('noscroll');	
 });
 
 $(document).on( 'keydown', function ( e ) {
 	if ( e.keyCode === 27 ) { // ESC
 		$('#overlay').hide(500);
+		$('body').removeClass('noscroll');	
+		displayCars();
 	}
 });
 
-function getData() {
-		$.ajax({
-			url: 'addcar.php',
-			type: 'post',
-			success: function(data) {
-				if (data.success) {
-					setTimeout(function() {
-						location.reload;
-					}, 1000);
-				}
-			}
-		});
+// function getData() {
+// 		$.ajax({
+// 			url: 'addcar.php',
+// 			type: 'post',
+// 			success: function(data) {
+// 				if (data.success) {
+// 					setTimeout(function() {
+// 						location.reload;
+// 					}, 1000);
+// 				}
+// 			}
+// 		});
+// 	}
+
+function displayCars(){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(this.readyState ==4 && this.status==200){
+			document.getElementById("autoRefresh").innerHTML = this.response;	
+		}
 	}
+	xhttp.open("post", "addcar.php", true);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send();
+
+}
+
 
 function submitData() {
 	var bookdate = document.getElementById('bkdate').value
@@ -87,18 +105,15 @@ function addCar() {
 	}
 }
 
-function checkDate(value) {
-	var now = new Date();
-	if (value <= now) {
-		return false;
-	}
-}
+
 
 function addnewcarprocessing(immat, make, model, year) {
 	var xhttp = new XMLHttpRequest();
-
-	if(this.readyState == 4 && this.status== 200) {
-		// alert("Please refresh your page.");
+	xhttp.onreadystatechange = function() {
+		if(this.readyState == 4 && this.status== 200) {
+			$("#overlay").hide(500);
+			displayCars();
+		}
 	}
 
 	xhttp.open("POST", "php/addcarprocess.php", true);
@@ -119,4 +134,11 @@ function bookingprocessing(bookdate, booktime, booksubject, bookdetails, bookveh
 	xhttp.open("POST","php/bookingprocess.php",true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.send("bkdate=" + bookdate + "&bktime=" + booktime + "&bksubject=" + booksubject + "&bkdetails=" + bookdetails + "&bkvehicle=" + bookvehicle);
+}
+
+function checkDate(value) {
+	var now = new Date();
+	if (value <= now) {
+		return false;
+	}
 }

@@ -17,18 +17,18 @@
 			<tr id="choosecarrow" >
 				<td>
 					<label for="choosecar">Choose/Add your car</label>
-					<input type="button" id="refreshbutton" name="refreshbutton" value="Refresh" onclick="getData()">
+					<!-- <input type="button" id="refreshbutton" name="refreshbutton" value="Refresh" onclick="getData()"> -->
 				</td>
 				<td>
-					<div id="autorefresh">
-						<?php include 'addcar.php'; ?>
+					<div id="autoRefresh">
+						
 					</div>
 				</td>
 			</tr>
 
 			<tr>
 				<td style="width: 40%;"><label for="bksubject">Subject</label></td>
-				<td style="text-align: left; width: 60%;"><input style="width: 95%;" type="text" id="bksubject" name="bksubject" placeholder="Subject"></td>
+				<td style="text-align: left; width: 60%;"><input style="width: 100%;" type="text" id="bksubject" name="bksubject" placeholder="Subject"></td>
 			</tr>
 
 			<tr>

@@ -23,7 +23,7 @@
                     <ul class="dropdown-content">
                         <li>
                             <a href="customerfeedback.php">Leave Feedback</a>
-                            <a href="review.php">View Review</a>
+                            <a href="customerreviews.php">View Review</a>
                         </li>
                     </ul>            
                 </li>

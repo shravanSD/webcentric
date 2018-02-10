@@ -8,6 +8,7 @@
 
 
         <link rel="stylesheet" href="style/indexstyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/slide.js"></script>
         <title>Home | CarZone</title>
     </head>
@@ -72,16 +73,6 @@
                             </td> 
                         </tr> 
 
-
-
-<!--                         <tr>
-                            <td id="review">
-                                <h3>Reviews</h3>
-                                <img src="images/Reviews/speech-left.png" alt="speech-left.jpg" width="500px" id="speech-l">
-                                <img src="images/Reviews/speech-right.png" alt="speech-right.jpg" width="700px" id="speech-r">
-                            </td>
-                        </tr>  -->
-
                         <tr>
                             <td id="help">
                                 <h3>Need any help?</h3>
@@ -99,12 +90,13 @@
                     </table>
                 </section>
             </div>
-
-            <div class="review">
-            
-            </div>
         </div>
-
+        
+        <!-- customerReview -->
+        <?php
+        include 'indexCustomerReview.php';
+        ?>
+        
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
 
         <?php

@@ -42,7 +42,7 @@ body {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgba(66, 114, 191, 0.8);
+	background-color: rgba(66, 114, 191, 0.7);
 	z-index: 5;
 	border-radius: 15px 50px;
 }
@@ -98,7 +98,7 @@ textarea {
 }
 
 #overlay #addnewcar {
-	background-color: rgba(0,0,0,0.8);
+	background-color: #000033;
 	width: 50%;
 	height: 50%;
 	margin: auto;
@@ -111,28 +111,42 @@ textarea {
 }
 
 fieldset {
+	background-color: #000033;
 	height: 100%;
+	font-family: 'Raleway-Light';
+    font-weight: bold;
 }
 
 #overlay #addnewcartable {
-	border: 1px solid white;
-	width: 60%;
-	margin-top: 150px;
-	margin: auto;
+	font-family: 'Raleway-Light';
+    font-weight: bold;
+	background-color: #000033;
+	border: 1px solid white collapse;
+	width: 80%;
+	margin-left: 8%;
+	margin:auto;
+	margin-top: 12%;
+	
 }
 
 #overlay #addnewcartable td {
-	border: 1px solid white;
+	border: 1px solid white collapse;
+	padding: 6px 0;
 }
-
+/*
 #overlay #addnewcartable .fcol{
 	width: 40%;
-}
+}*/
 
 #overlay #addnewcartable .scol{
-	width: 55%;
+	width: 49%;
 }
-
+.fcol{
+	text-align: right;
+}
+.fcol label{
+	padding-right: 10px;
+}
 .noscroll {
 	overflow: hidden;
 }

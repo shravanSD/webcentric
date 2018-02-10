@@ -48,6 +48,63 @@
 }
 
 
+.fbTable{
+    border-collapse: collapse;
+    
+    width: 100%;
+    font-family: 'Raleway-Light';
+    font-weight: bold;
+
+}
+
+.fbTable, .fbTablle th {
+  /*  border: 1px solid black;*/
+}
+
+.fbTable tr:nth-child(even) {background-color:#ccccff;}
+
+.fbTable tr{
+    height: 35px;
+}
+#fbTitle{
+    text-align: center;
+}
+
+
+.fbReaction{
+    width: 50%;
+    text-align: right;
+    font-style: italic;
+}
+.fbName{
+    padding-left: 20px;
+    width:10%;
+}
+.fbRating{
+    font-weight: bolder;
+}
+.checked {
+    color: orange;
+}
+
+#fbFooter{
+    text-align: right;
+    font-size: 12px;
+    padding-right: 10%;
+}
+#fbFooter a{
+    text-decoration: none;
+}
+
+#fbNote{
+    margin-right: 10%;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Raleway-Light';
+    font-weight: bold;
+}
+
+
 
 
 

@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	$db = mysqli_connect("localhost", "root", "", "carzone") or die("Could not connect to database."); //Vyas
 	$query=mysqli_query($db,"SELECT * FROM car where member_email = '" . $_SESSION["member_email"] . "'");
 	$rowcount = mysqli_num_rows($query);
 	$inserted = 0;
@@ -28,12 +30,12 @@
 			}
 		}
 		if (($inserted % 2))
-			echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
+			echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
 		echo "</tr>";
 	}
 	if (!($rowcount))
 	{
-		echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"#addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
+		echo "<td style=\"background-color: red;\"><br>Add new car<br><br><input type=\"button\" name=\"addnew\" id=\"addnew\" value=\"Add\" ><br><br></td>";
 	}
 	echo "</table>";
 ?>

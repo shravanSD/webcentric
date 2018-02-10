@@ -89,3 +89,19 @@ Changes: Shravan
 Changes: Shravan
 
 	- Added jQuery for ESC key when adding a new car. (Quicker)
+
+8/02/18
+Changes: Pranav
+	
+	-added five reviews from database to index.php
+
+10/2/18
+Changes: Shakill
+	
+	-added all reviews from database to customerreviews.php
+
+10/2/18
+Changes: Vyas
+	
+	-add car refresh fixed.
+	-some css mods in car booking 
