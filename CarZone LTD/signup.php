@@ -74,9 +74,7 @@
 
         </div>
 
-
-        
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        <button onclick="scrollToTop(750)" id="myBtn" title="Go to top">Top</button> 
 
         <?php include 'footer.html'; ?>
     </body>
