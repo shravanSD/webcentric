@@ -34,7 +34,7 @@
                     // session_start();
                     if(isset($_SESSION["sessionSet"])){
                        echo "<li style=\"float: right; margin-right: 40px;\"><a href=\"php/logoutprocess.php\">Log Out</a></li>
-                            <li style=\"float: right;\"><a href=\"myaccount.php\">My Account</a></li>"; 
+                            <li style=\"float: right;\"><a href=\"myaccount2.php\">My Account</a></li>"; 
                     }
                     else{
                         
