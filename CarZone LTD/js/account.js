@@ -6,7 +6,7 @@ function createAjaxRequest(){
 	try{ 
 		return new XMLHttpRequest(); 
 	} catch(e) {}
-	alert("XMLHttppRequest not supported");
+	alert("XMLHttpRequest not supported");
 	return null;
 }
 
